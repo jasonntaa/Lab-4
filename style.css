@@ -1,0 +1,186 @@
+:root {
+    --primary-color: #191923;
+    --accent-color: #c9c9c9;
+    --text-color: #1f2937;
+    --background-color: #f1f5f9;
+    --header-background: #0f172a;
+    --footer-background: #1e293b;
+    --footer-text-color: #e2e8f0;
+    --font-family: 'Poppins', sans-serif;
+    --font-size-base: 16px;
+    --font-size-heading: 24px;
+    --font-weight-regular: 300;
+    --font-weight-bold: 400;
+    --spacing-unit: 16px;
+    --transition-duration: 0.3s;
+    --scale-hover: 1.05;
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: var(--font-size-base);
+}
+
+header {
+    background-color: var(--header-background);
+    color: white;
+    padding: var(--spacing-unit);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-pic {
+    width: 3rem;
+}
+
+nav a {
+    margin: 0 var(--spacing-unit);
+    text-decoration: none;
+    color: white;
+    font-weight: var(--font-weight-bold);
+
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    transform: scale(var(--scale-hover));
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section {
+    padding: calc(var(--spacing-unit) * 2);
+}
+
+h2 {
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-unit);
+}
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-unit);
+    justify-content: center;
+    margin-top: var(--spacing-unit);
+}
+
+.project-picture {
+    width: 20rem;
+    height: 20rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: var(--spacing-unit);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    gap: var(--spacing-unit);
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+.card:hover {
+    transform: scale(var(--scale-hover));
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-unit);
+    width: 50rem;
+}
+
+
+.input {
+    padding: var(--spacing-unit);
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: var(--font-family);
+}
+
+#message {
+    height: 10rem;
+}
+
+#form-button {
+    width: 10rem;
+    align-self: center;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: var(--spacing-unit);
+}
+
+@media screen and (max-width: 640px) {
+    nav a {
+        display: block;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img id="logo-pic" src="./images/pizza.svg">
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#background">Background</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Aspiring front end developer with experience in leading teams.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>JavaSript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>5 years in software support operations</p>
+        </section>
+        <section id="background">
+            <h2>Background</h2>
+            <p>Aspiring front end developer at George Brown College</p>
+        </section>
+        <section id="projects">
+            <div id="projects-container">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="card">
+                        <h3>Recipe App</h3>
+                        <img class="project-picture" src="./images/project1.webp" alt="Project 1">
+
+                        <p>Curate your own recipes in this easy to use app!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Note App</h3>
+                        <img class="project-picture" src="./images/project2.webp" alt="Project 2">
+
+                        <p>Document everything you need!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Budget</h3>
+                        <img class="project-picture" src="./images/project3.webp" alt="Project 3">
+
+                        <p>Track your finances!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="form-container">
+                <h2>Contact Me</h2>
+                <form>
+                    <input class="input" type="text" placeholder="Your Name">
+                    <input class="input" type="email" placeholder="Your Email">
+                    <textarea class="input" id="message" placeholder="Your Message"></textarea>
+                    <button id="form-button">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jason Ta</p>
+    </footer>
+</body>
+
+</html>
